@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mon site</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Bienvenue sur mon site</h1>
+    <nav>
+      <a href="#section1">Section 1</a>
+      <a href="#section2">Section 2</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="section1">
+      <h2>Section 1</h2>
+      <p>Ceci est un exemple de contenu.</p>
+      <button id="btn">Clique-moi</button>
+    </section>
+
+    <section id="section2">
+      <h2>Section 2</h2>
+      <p>Autre contenu ici.</p>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
