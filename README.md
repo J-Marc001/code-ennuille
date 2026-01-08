@@ -9,6 +9,3 @@ Projet simple hébergé avec GitHub Pages.
 - `index.html`
 - `styles.css`
 - `main.js`
-
-# Ouvrir avec
-https://<ton-user>.github.io/<nom-du-repo>/
