@@ -47,11 +47,27 @@ header {
     align-items: center;
     background: var(--blacksecond);
 }
+
 nav a {
   color: var(--base-color);
   margin-right: 1rem;
   text-decoration: none;
 }
+
+.main{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    min-height: 100vh;
+    background: var(--base-variant);
+    transition: 0.5s;
+}
+
+.main.active {
+    width: calc(100% - 80px);
+    left: 80px;
+}
+
 section {
   padding: 1.5rem;
   border-bottom: 1px solid #eee;
@@ -240,19 +256,7 @@ input[type="date"] {
 }
 
 /* ============================== Main ========================= */
-.main{
-    position: absolute;
-    width: calc(100% - 220px);
-    left: 220px;
-    min-height: 100vh;
-    background: var(--base-variant);
-    transition: 0.5s;
-}
 
-.main.active {
-    width: calc(100% - 80px);
-    left: 80px;
-}
 
 .topbar{
     width: 100%;
