@@ -1,18 +1,48 @@
-:root { --primary: #2e7d32; }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-* { box-sizing: border-box; }
+:root{
+    --base-color: #fff;
+    --base-variant: #e8e9ed;
+    --text-color: #111528;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --blackprimary: #111;
+    --blacksecond: #232738;
+    --g-t-w: rgb(216, 240, 5);
+}
+
+.darkmode{
+    --base-color: #070b1b;
+    --base-variant: #101425;
+    --text-color: #ffffff;
+    --secondary-text: #a4a5b8;
+    --primary-color: #3a435d;
+    --blackprimary: #fff;
+    --blacksecond: mediumspringgreen;
+    --g-t-w: #fff;
+}
+ 
 body {
-  font-family: system-ui, sans-serif;
   margin: 0;
   line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--base-variant);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 header {
-  background: var(--primary);
+  background: var(--blacksecond);
   color: #fff;
   padding: 1rem;
 }
 nav a {
-  color: #fff;
+  color: var(--base-color);
   margin-right: 1rem;
   text-decoration: none;
 }
@@ -59,34 +89,7 @@ button:hover { background: #1565c0; }
 
 /* ==================================== Resource ============================================ */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
 
-:root{
-    --base-color: #fff;
-    --base-variant: #e8e9ed;
-    --text-color: #111528;
-    --secondary-text: #232738;
-    --primary-color: #3a435d;
-    --blackprimary: #111;
-    --blacksecond: #232738;
-    --g-t-w: rgb(216, 240, 5);
-}
-
-.darkmode{
-    --base-color: #070b1b;
-    --base-variant: #101425;
-    --text-color: #ffffff;
-    --secondary-text: #a4a5b8;
-    --primary-color: #3a435d;
-    --blackprimary: #fff;
-    --blacksecond: mediumspringgreen;
-    --g-t-w: #fff;
-}
 
 select, option {
     background-color: var(--base-variant) !important;  /* fond sombre */
@@ -100,13 +103,6 @@ input[type="date"] {
     border-radius: 4px;
 }
 
-body{
-    min-height: 100vh;
-    overflow-x: hidden;
-    background-color: var(--base-variant);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
 
 .container{
     position: relative;
