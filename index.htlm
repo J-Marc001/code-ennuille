@@ -9,9 +9,9 @@
 <body>
 
   <header>
-    // Logo
+    <!-- logo -->
     <div class=""><h1>Bienvenue sur mon site</h1></div>
-    //navigation
+    <!-- navigation -->
     <nav>
       <a class="lien" href=""></a>
       <a class="lien" href=""></a>
